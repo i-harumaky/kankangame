@@ -2,10 +2,6 @@
 よくみるボール反射ゲーム。
 Brick Crusherとかもっといい名前があっただろうけど、そこについてはノータッチで。
 
-## Links
-[このゲームをプレイする](https://halabo.net/pub/kankangame/)  
-[ゲームに関する記事を見る](https://halabo.net/wp/kankan-game/)
-
 ## Function
 スタート（Canvasコンテキストをクリック）すると左右に揺れる矢印が現れる。  
 もう一度コンテキスト（または矢印の上）をクリックすると、その方向にボールが発射される。
