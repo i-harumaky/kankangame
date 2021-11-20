@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カンカンするゲーム</title>
+  <link rel="stylesheet" href="reboot.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="#">
+  <script src="https://kit.fontawesome.com/16eac9473c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <p class="header-left">カンカンするゲーム</p>
+    <div class="header-right">
+      <a href="https://halabo.net/">Halaboホーム</a>
+      <a href="https://halabo.net/wp/kankan-game/">このゲームの記事</a>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="game-outer">
+        <div class="game-topbar">
+          <p>スコア：<span id="score">0</span></p>
+          <p><span id="restart">リスタート</span></p>
+          <p class="audio-toggle"><i class="fas fa-volume-up audio-on"></i><i class="fas fa-volume-mute audio-off active"></i></p>
+        </div>
+        <canvas id="game-field" >
+          Canvas not suppoerted
+        </canvas>
+        <div id="arrow"></div>
+        <div id="bottom-text">タップしてください</div>
+      </div>
+    </div>
+
+    <div class="result" id="result">
+      <div class="result-outer">
+        <div class="result-inner">
+          <div id="result-score"></div>
+          <div id="result-msg"></div>
+          <div id="saying"></div>
+          <div id="result-close">とじる</div>
+
+        </div>
+      </div>
+    </div>
+
+    <audio id="collision-sound" preload="auto">
+      <source src="collision.mp3" type="audio/mp3">
+      <p>効果音は再生されません</p>
+    </audio>
+    <audio id="result-sound" preload="auto">
+      <source src="result.mp3" type="audio/mp3">
+    </audio>
+  </main>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>  
+  <script src="game.js"></script>
+</body>
+</html>
