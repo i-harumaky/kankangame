@@ -343,48 +343,48 @@ $(function() {
     var msg;
     switch (true) {
       case score >= 790:
-        msg = 'フルコンボ！！！<br>..他のことにこの運を使いましょう'
+        msg = 'Lv14<br>フルコンボ！'
       case score >= 700:
-        msg = '数年に一度の逸材<br>しかしフルコンボまではあと90!'
+        msg = 'Lv13<br>宝くじ3億円の運をこっちに使ってしまったようです'
         break;
       case score >= 600:
-        msg = 'さては、やり込み勢の方ですね？'
+        msg = 'Lv12<br>さては、やり込み勢の方ですね？'
         break;
       case score >= 500:
-        msg = 'エクセレント！<br>..しかしトップクラスまでは程遠し。'
+        msg = 'Lv11<br>年に一度のウルトララッキーショット<br>..しかしトップクラスまでは程遠し。'
         break;
       case score >= 400:
-        msg = '優良＋＋'
+        msg = 'Lv10<br>月に一度のラッキーショット'
         break;
       case score >= 350:
-        msg = '優良。'
+        msg = 'Lv9<br>上級者レベルに突入！'
         break;
       case score >= 300:
-        msg = '良'
+        msg = 'Lv8<br>幸運の持ち主'
         break;
       case score >= 250:
-        msg = '可'
+        msg = 'Lv7<br>すごい！けどLv14まであります'
         break;
       case score >= 200:
-        msg = 'Well...<br>Nice try'
+        msg = 'Lv6<br>中級者レベルに突入！'
         break;
       case score >= 150:
-        msg = 'よくがんばりました。'
+        msg = 'Lv5<br>よくできました'
         break;
       case score >= 100:
-        msg = 'がんばりましょう'
+        msg = 'Lv4<br>よくがんばりました。'
         break;
       case score >= 75:
-        msg = 'あれれ..<br>どうしましたか？'
+        msg = 'Lv3<br>あれれ..どうしましたか？'
         break;
       case score >= 50:
-        msg = '手が滑りましたか？'
+        msg = 'Lv2<br>そんな時もあるよ'
         break;
       case score >= 20:
-        msg = '徒然草'
+        msg = 'Lv1<br>手が滑りましたか？'
         break;
       default:
-        msg = '草'
+        msg = 'Lv0<br>...見なかったことにしよう'
         break;
     } 
     $('#result-msg').html(msg);
